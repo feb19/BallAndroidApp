@@ -72,13 +72,13 @@ class MainActivity : AppCompatActivity(), SensorEventListener, SurfaceHolder.Cal
 
     private fun draw() {
         val canvas = surfaceView.holder.lockCanvas()
-        canvas.drawColor(Color.YELLOW)
+        canvas.drawColor(Color.WHITE)
         canvas.drawCircle(
                 ballX,
                 ballY,
                 radius,
                 Paint().apply {
-                    color = Color.MAGENTA
+                    color = Color.BLACK
                 }
         )
         surfaceView.holder.unlockCanvasAndPost(canvas)
